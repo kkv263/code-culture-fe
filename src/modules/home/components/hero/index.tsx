@@ -1,34 +1,41 @@
 import UnderlineLink from "@modules/common/components/underline-link"
+import AnimatedTrack from "@modules/layout/components/animated-track"
+import AnimatedCircleHero from '@modules/layout/components/hero-circle-animation';
 import Image from "next/image"
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] w-full relative">
-      <div className="text-white absolute inset-0 z-10 flex flex-col justify-center items-center text-center small:text-left small:justify-end small:items-start small:p-32">
-        <h1 className="text-2xl-semi mb-4 drop-shadow-md shadow-black">
-          Summer styles are finally here
-        </h1>
-        <p className="text-base-regular max-w-[32rem] mb-6 drop-shadow-md shadow-black">
-          This year, our new summer collection will shelter you from the harsh
-          elements of a world that doesn&apos;t care if you live or die.
+    <>
+    <section className="h-[90vh] w-full relative overflow-hidden from-gray-50 to-white bg-gradient-to-r">
+      <div className="absolute inset-0 z-1 flex flex-col items-center text-center small:text-left justify-end small:items-start small:p-32">
+        <h1 className="font-mono text-7xl mb-4">CØĐE: CULTURE</h1>
+        <p className="text-lg max-w-[32rem] mb-6">
+          When you combine unique original art with sophiscated anime --
+          you get something you&apos;ve never seen before
         </p>
-        <UnderlineLink href="/store">Explore products</UnderlineLink>
+        <UnderlineLink href="/store">Explore products &gt;&gt; </UnderlineLink>
       </div>
-      <Image
-        src="/hero.jpg"
-        loading="eager"
-        priority={true}
-        quality={90}
-        alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-        className="absolute inset-0"
-        draggable="false"
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }}
-      />
-    </div>
+      <div className="absolute top-0 right-32 w-96 h-full">
+        <div className="w-128 h-128 absolute -translate-y-1/2 -translate-x-1/2 top-1/2 left-1/2 border border-black rounded-full"></div>
+        <AnimatedCircleHero />
+        <Image
+          src="/herostreetwear.png"
+          loading="eager"
+          priority={true}
+          quality={100}
+          alt="male model with white shirt, green cargo pants, and backpack over shoulder"
+          draggable="false"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+
+    </section>
+    <AnimatedTrack />
+    </>
   )
 }
 

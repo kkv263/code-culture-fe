@@ -2,6 +2,7 @@ import { PricedProduct } from "@medusajs/medusa/dist/types/pricing"
 import { NextPage } from "next"
 import { AppProps } from "next/app"
 import { ReactElement, ReactNode } from "react"
+import ReactCurvedText from 'react-curved-text';
 
 export type CollectionData = {
   id: string

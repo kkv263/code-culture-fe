@@ -6,6 +6,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        rtl: {
+          '0%': { transform: 'translateX(0)'},
+          '100%': { transform: 'translateX(-50%)'}
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)'},
+          '100%': { transform: 'rotate(360deg)'}
+        }
+      },
+      animation: {
+        rtl: 'rtl 75s infinite linear',
+        'spin-slow': 'spin 100s infinite linear'
+      },
       transitionProperty: {
         "width": "width",
         "spacing": 'margin, padding',
@@ -14,8 +28,9 @@ module.exports = {
         "8xl": "100rem",
       },
       screens: {
-        "2xsmall": "320px",
-        "xsmall": "512px",
+        "3xsmall": "320px",
+        "2xsmall": "512px",
+        "xsmall": "768px",
         "small": "1024px",
         "medium": "1280px",
         "large": "1440px",
@@ -23,17 +38,15 @@ module.exports = {
         "2xlarge": "1920px",
       },
       fontFamily: {
-        sans: [
-          "Inter",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Ubuntu",
-          "sans-serif",
-        ],
+        sans: ['var(--font-ibm)'],
+        mono: ['var(--font-russo-one)'],
       },
+      width: {
+        '128': '32rem'
+      },
+      height: {
+        '128': '32rem'
+      }
     },
   },
   plugins: [],

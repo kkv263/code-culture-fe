@@ -59,7 +59,7 @@ const Nav = () => {
           className={clsx(
             "text-gray-900 flex items-center justify-between w-full h-full text-small-regular transition-colors duration-200",
             {
-              "text-white group-hover:text-gray-900": isHome && !isScrolled,
+              "text-black group-hover:text-gray-900": isHome && !isScrolled,
             }
           )}
         >
@@ -72,16 +72,16 @@ const Nav = () => {
             </div>
           </div>
 
-          <div className="flex items-center h-full">
+          {/* <div className="flex items-center h-full">
             <Link href="/" className="text-xl-semi uppercase">
               Acme
             </Link>
-          </div>
+          </div> */}
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
-              <Link href="/account">Account</Link>
+              <Link className="text-sm" href="/account">ACCOUNT</Link>
             </div>
             <CartDropdown />
           </div>
