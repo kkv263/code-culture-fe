@@ -72,11 +72,11 @@ const Nav = () => {
             </div>
           </div>
 
-          {/* <div className="flex items-center h-full">
-            <Link href="/" className="text-xl-semi uppercase">
-              Acme
+          <div className="flex items-center h-full">
+            <Link href="/" className="text-xl-semi uppercase font-mono">
+              LOGO
             </Link>
-          </div> */}
+          </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
             <div className="hidden small:flex items-center gap-x-6 h-full">

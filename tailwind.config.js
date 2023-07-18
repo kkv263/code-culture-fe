@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'subtle-pattern': "url('/subtlebg.jpg')"
+      },
       keyframes: {
         rtl: {
           '0%': { transform: 'translateX(0)'},

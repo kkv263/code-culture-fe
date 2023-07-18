@@ -9,7 +9,7 @@ const FooterNav = () => {
   const { collections } = useCollections()
 
   return (
-    <div className="content-container flex flex-col gap-y-8 pt-16 pb-8 bg-black text-white relative overflow-hidden">
+    <div className="content-container flex flex-col gap-y-8 pt-16 pb-8 text-white relative overflow-hidden">
 
       <div className="absolute -top-1  left-1/2 -translate-x-1/2 font-mono whitespace-nowrap"> 
         {[...Array(99)].map((x, i) => (<> / </>))}
