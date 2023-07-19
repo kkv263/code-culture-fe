@@ -12,7 +12,7 @@ const Hero = () => {
             <h1 className="font-mono xsmall:text-7xl text-5xl mb-4">CØĐE: CULTURE <div className="font-sans text-3xl text-rose-500">「コードカルチャー」</div></h1>
             <p className="xsmall:text-lg text-md max-w-[32rem] mb-6">
               When you combine unique original art with sophiscated anime --
-              you get something you&apos;ve never seen before
+              you get something you&apos;ve never seen before.
             </p>
             <UnderlineLink href="/store">Explore products &gt;&gt; </UnderlineLink>
           </div>

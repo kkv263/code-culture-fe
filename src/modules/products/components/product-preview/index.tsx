@@ -13,8 +13,8 @@ const ProductPreview = ({
     <Link href={`/products/${handle}`}>
       <div>
         <Thumbnail thumbnail={thumbnail} size="full" />
-        <div className="text-base-regular mt-2">
-          <span>{title}</span>
+        <div className="mt-2">
+          <span className="font-mono text-2xl">{title}</span>
           <div className="flex items-center gap-x-2 mt-1">
             {price ? (
               <>
@@ -24,7 +24,7 @@ const ProductPreview = ({
                   </span>
                 )}
                 <span
-                  className={clsx("font-semibold", {
+                  className={clsx("font-sans", {
                     "text-rose-500": price.price_type === "sale",
                   })}
                 >

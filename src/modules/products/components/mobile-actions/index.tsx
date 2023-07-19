@@ -72,7 +72,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
             </div>
             <div className="grid grid-cols-2 w-full gap-x-4">
               <Button onClick={open} variant="secondary">
-                <div className="flex items-center justify-between w-full">
+                <div className="flex items-center justify-between w-full text-sm">
                   <span>
                     {variant
                       ? Object.values(options).join(" / ")
@@ -81,7 +81,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
                   <ChevronDown />
                 </div>
               </Button>
-              <Button onClick={addToCart}>{!inStock ? "Out of stock" : "Add to cart"}</Button>
+              <Button className="text-sm" variant="tertiary" onClick={addToCart}>{!inStock ? "Out of stock" : "Add to cart"}</Button>
             </div>
           </div>
         </Transition>

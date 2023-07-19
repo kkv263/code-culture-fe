@@ -1,7 +1,26 @@
+'use client'
+
 import UnderlineLink from "@modules/common/components/underline-link"
 import Image from "next/image"
+import { useState } from "react"
 
 const ProductShowcase = () => {
+
+  const products = [
+    {
+      name: 'c.DAWN [x]',
+      price: '$24.99',
+      img: '/sidemodel.png'
+    },
+    {
+      name: 'c.DUSK [x]',
+      price: '$23.99',
+      img: '/malestreetwear.png'
+    }
+  ]
+
+  const [activeIndex, setActiveIndex] = useState(0)
+
   return (
     <section className="medium:py-12 py-8 relative after:absolute after:inset-0 after:w-full after:h-full after:bg-subtle-pattern after:opacity-30 after:bg-fill ">
       <div className="content-container medium:py-12 py-4 grid medium:grid-cols-2 grid-cols-1 z-10 relative">
@@ -13,7 +32,7 @@ const ProductShowcase = () => {
 
           <div className="w-96 medium:h-[40rem] h-[32rem] relative border border-black mb-4 bg-white">
             <Image
-              src="/sidemodel.png"
+              src={products[activeIndex].img}
               loading="lazy"
               quality={90}
               alt="female model with white shirt and pants"
@@ -26,14 +45,18 @@ const ProductShowcase = () => {
             />
           </div>
           <div className="flex flex-col pb-12 text-center">
-            <p className="font-mono text-2xl">c.DAWN [x]</p>
-            <p>$24.99</p>
+            <p className="font-mono text-2xl">{products[activeIndex].name}</p>
+            <p>{products[activeIndex].price}</p>
           </div>
           <div className="flex justify-center items-center w-96 h-2">
-            <div className="cursor-pointer h-2 mr-2 border border-black bg-rose-500 w-full"></div>
-            <div className="cursor-pointer h-2 mr-2 border border-black w-full"></div>
-            <div className="cursor-pointer h-2 mr-2 border border-black w-full"></div>
-            <div className="cursor-pointer h-2 border border-black w-full"></div>
+            {products.map((x, index) => (
+                <div 
+                  onClick={() => setActiveIndex(index)}
+                  key={index} 
+                  className={`cursor-pointer h-2 ${index !== products.length - 1 ? 'mr-2' : ''} border border-black ${activeIndex === index ? 'bg-rose-500' : '' } w-full hover:bg-rose-600 transition-colors	`}>
+                </div>
+            ))}
+
           </div>
         </div>
         <div className="medium:flex flex-col items-center hidden">

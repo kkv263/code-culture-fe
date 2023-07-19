@@ -12,7 +12,7 @@ const UnderlineLink = ({ href, children, extraClass, bgColor="bg-black" }: Under
     <div className="flex items-start">
       <Link
         href={href}
-        className={`${extraClass} ${bgColor} flex items-center px-2 text-lg border-b border-current gap-x-4 py-2 transition-all duration-300 group hover:pl-4 hover:pr-4 rounded-tr-md rounded-bl-md`}
+        className={`${extraClass} ${bgColor} flex items-center px-4 text-lg border-b border-current gap-x-4 py-2 transition-all duration-300 group hover:px-8 rounded-tr-md rounded-bl-md`}
       >
         <>
           <span className="text-white">{children}</span>

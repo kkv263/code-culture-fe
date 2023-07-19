@@ -29,35 +29,16 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
       {product.collection && (
         <Link
           href={`/collections/${product.collection.handle}`}
-          className="text-small-regular text-gray-700"
+          className="text-small-regular text-black"
         >
           {product.collection.title}
         </Link>
       )}
-      <h3 className="text-xl-regular">{product.title}</h3>
+      <h3 className="text-xl-regular font-mono">{product.title}</h3>
 
-      <p className="text-base-regular">{product.description}</p>
-
-      {product.variants.length > 1 && (
-        <div className="my-8 flex flex-col gap-y-6">
-          {(product.options || []).map((option) => {
-            return (
-              <div key={option.id}>
-                <OptionSelect
-                  option={option}
-                  current={options[option.id]}
-                  updateOption={updateOptions}
-                  title={option.title}
-                />
-              </div>
-            )
-          })}
-        </div>
-      )}
-
-      <div className="mb-4">
+      <div className="">
         {selectedPrice ? (
-          <div className="flex flex-col text-gray-700">
+          <div className="flex flex-col text-black">
             <span
               className={clsx("text-xl-semi", {
                 "text-rose-600": selectedPrice.price_type === "sale",
@@ -83,8 +64,28 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
           <div></div>
         )}
       </div>
+      <div className="w-full h-4 -mt-6 styled-line bg-black mb-2"></div>
 
-      <Button onClick={addToCart}>
+      <p className="text-base-regular">{product.description}</p>
+
+      {product.variants.length > 1 && (
+        <div className="my-8 flex flex-col gap-y-6">
+          {(product.options || []).map((option) => {
+            return (
+              <div key={option.id}>
+                <OptionSelect
+                  option={option}
+                  current={options[option.id]}
+                  updateOption={updateOptions}
+                  title={option.title}
+                />
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      <Button variant="tertiary" onClick={addToCart}>
         {!inStock ? "Out of stock" : "Add to cart"}
       </Button>
     </div>

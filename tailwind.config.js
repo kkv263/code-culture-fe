@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         'subtle-pattern': "url('/subtlebg.jpg')"
       },
+      colors: {
+        'black': '#111'
+      },
       keyframes: {
         rtl: {
           '0%': { transform: 'translateX(0)'},

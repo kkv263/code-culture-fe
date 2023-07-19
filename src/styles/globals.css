@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
+  body {
+    color: #111;
+  }
+
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -50,6 +54,10 @@
 }
 
 @layer components {
+  .styled-line {
+    clip-path: polygon(40% 90%, 45% 35%, 95% 35%, 100% 100%, 0 100%, 0 90%);
+  }
+
   .content-container {
     @apply max-w-[1440px] w-full mx-auto px-8
   }
