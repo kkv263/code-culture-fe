@@ -74,7 +74,7 @@ const ShippingAddress = () => {
               errors={errors}
               touched={touchedFields}
             />
-            <div className="grid grid-cols-[122px_1fr] gap-x-2">
+            <div className="grid grid-cols-[144px_1fr] gap-x-2">
               <Input
                 label="Postal code"
                 {...register("shipping_address.postal_code", {

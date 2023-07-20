@@ -43,7 +43,7 @@ const Addresses = () => {
             </div>
           )}
           <Button
-            className="max-w-[200px] mt-6"
+            className="max-w-[320px] mt-6"
             onClick={handleSubmit(setAddresses)}
           >
             Continue to delivery

@@ -20,7 +20,7 @@ const Button = ({
       className={clsx(
         "xsmall:text-base text-sm uppercase flex items-center justify-center xsmall:min-h-[50px] min-h-[36px] px-5 py-[10px] border transition-colors duration-200 disabled:opacity-50",
         {
-          "text-white bg-black border-black hover:bg-white hover:text-black disabled:hover:bg-black":
+          "text-white bg-black border-black hover:bg-white hover:text-black":
             variant === "primary",
           "text-black bg-transparent border-black hover:bg-gray-200":
             variant === "secondary",

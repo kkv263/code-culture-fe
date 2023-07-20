@@ -9,11 +9,7 @@ const FooterNav = () => {
   const { collections } = useCollections()
 
   return (
-    <div className="content-container flex flex-col gap-y-8 pt-16 pb-8 text-white relative overflow-hidden">
-
-      <div className="absolute -top-1  left-1/2 -translate-x-1/2 font-mono whitespace-nowrap"> 
-        {[...Array(149)].map((x, i) => (<span key={i}>/</span>))}
-      </div>
+    <div className="content-container flex flex-col gap-y-8 pt-16 pb-8 text-white relative">
       <div className="flex flex-col gap-y-6 xsmall:flex-row xsmall:items-start items-center justify-between">
         <form action="" className="flex flex-col pr-8">
           {/* <Link href="/" className="text-xl-semi uppercase font-mono">
@@ -96,7 +92,7 @@ const FooterNav = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  ◘ Twitter
+                  ◘ TikTok
                 </a>
               </li>
             </ul>
