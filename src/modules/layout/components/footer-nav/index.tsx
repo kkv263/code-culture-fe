@@ -36,65 +36,16 @@ const FooterNav = () => {
           <div className="flex flex-col gap-y-2">
             <span className="text-base underline">INFO</span>
             <ul className="grid grid-cols-1 gap-y-2">
-              <li>
-                <a
-                  href="https://github.com/medusajs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://docs.medusajs.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ FAQ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/medusajs/nextjs-starter-medusa"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ Our Artists
-                </a>
-              </li>
+              <li><a href="/our-story">◘ Our Story</a></li>
+              <li><a href="/faq">◘ FAQ</a></li>
             </ul>
           </div>
           <div className="flex flex-col gap-y-2">
             <span className="text-base underline">CONTACT</span>
             <ul className="grid grid-cols-1 gap-y-2">
-              <li>
-                <a
-                  href="https://github.com/medusajs"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ Discord
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://docs.medusajs.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/medusajs/nextjs-starter-medusa"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  ◘ TikTok
-                </a>
-              </li>
+              <li><a href="https://github.com/medusajs" target="_blank" rel="noreferrer">◘ Discord</a></li>
+              <li><a href="https://docs.medusajs.com" target="_blank" rel="noreferrer">◘ Instagram</a></li>
+              <li><a href="https://github.com/medusajs/nextjs-starter-medusa" target="_blank" rel="noreferrer">◘ TikTok</a></li>
             </ul>
           </div>
         </div>
