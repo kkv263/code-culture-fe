@@ -23,7 +23,7 @@ const ArtistCards = () => {
                   }}
                 />
                 </div>
-                <h3 className='font-mono text-xl pb-4'>k4vlevi / Kevin</h3>
+                <h3 className='font-mono text-xl pb-4'>Kevin (k4vlevi)</h3>
                 <p className='text-sm pb-8 text-center'>Founder and lead developer of Code Culture. He&apos;s admiring different pieces artwork and culture. He always wants to finds way to share them with the world. Whenever he&apos;s not coding, he loves to draw, play videogames, and weightlift.</p>
                 <ul>
                   <li className='hover:underline'><a href="https://www.instagram.com/k4vlevi/">Instagram: k4vlevi</a></li>

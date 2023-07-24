@@ -44,8 +44,8 @@ const FooterNav = () => {
             <span className="text-base underline">CONTACT</span>
             <ul className="grid grid-cols-1 gap-y-2">
               <li><a href="https://github.com/medusajs" target="_blank" rel="noreferrer">◘ Discord</a></li>
-              <li><a href="https://docs.medusajs.com" target="_blank" rel="noreferrer">◘ Instagram</a></li>
-              <li><a href="https://github.com/medusajs/nextjs-starter-medusa" target="_blank" rel="noreferrer">◘ TikTok</a></li>
+              <li><a href="https://www.instagram.com/codecultureapparel/" target="_blank" rel="noreferrer">◘ Instagram</a></li>
+              <li><a href="https://www.tiktok.com/@codecultureapparel" target="_blank" rel="noreferrer">◘ TikTok</a></li>
             </ul>
           </div>
         </div>

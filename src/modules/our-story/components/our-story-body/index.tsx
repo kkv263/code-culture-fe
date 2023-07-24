@@ -8,10 +8,12 @@ const OurStoryBody = () => {
       <div className="content-container">
         <div className='grid small:grid-cols-3 grid-cols-1 small:gap-16 pb-16'>
           <div className='py-8'>
-            <h3 className='font-mono text-4xl pb-8'>Designs crafted by passionate artists</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar tellus libero. Proin at tincidunt quam. Sed vitae libero ullamcorper, ultricies massa tincidunt, aliquet dolor. Sed finibus leo ante. Praesent felis lorem, facilisis vel laoreet quis, consectetur eget ex. Nunc euismod quis risus eu ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat scelerisque eleifend. Etiam semper euismod tristique. </p>
+            <h3 className='font-mono text-4xl pb-8'>Artist owned, artist vision.</h3>
+            <p>We started Code Culture as a platform for artists to be able to create thier vision for the world to see. We want art to be worn, to be shown off, be real and physical.  </p>
+            <br/>
+            <p>Let&apos;s make the world our canvas -- one master work of art at a time.</p>
           </div>
-          <div className='relative w-full col-span-2 h-[32rem] after:absolute after:w-full after:h-full after:-bottom-6 after:-left-6 after:bg-rose-500'>
+          <div className='relative w-full col-span-2 h-[28rem] after:absolute after:w-full after:h-full after:-bottom-6 after:-left-6 after:bg-rose-500'>
             <Image
               className='top z-10'
               src="/cta_four.jpg"
@@ -29,7 +31,7 @@ const OurStoryBody = () => {
             </div>
         </div>
         <div className='flex small:flex-row flex-col-reverse'>
-          <div className='relative small:w-1/2 w-full h-[32rem] after:absolute after:w-full after:h-full after:-bottom-6 after:-right-6 after:bg-slate-800 -order-1'>
+          <div className='relative small:w-1/2 w-full h-[28rem] after:absolute after:w-full after:h-full after:-bottom-6 after:-right-6 after:bg-slate-800 -order-1'>
             <Image
               className='object-top z-10'
               src="/cta_three.jpg"
@@ -47,7 +49,9 @@ const OurStoryBody = () => {
             </div>
             <div className='pt-8 relative small:w-1/2 w-full small:ml-16 ml-0'>
               <h3 className='font-mono text-4xl pb-8'>Pushing limits, trying new things</h3>
-              <p className='pb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar tellus libero. Proin at tincidunt quam. Sed vitae libero ullamcorper, ultricies massa tincidunt, aliquet dolor. Sed finibus leo ante. Praesent felis lorem, facilisis vel laoreet quis, consectetur eget ex. Nunc euismod quis risus eu ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat scelerisque eleifend. Etiam semper euismod tristique. </p>
+              <p >Art is limitless, no bounds, and infinite potential. We&apos;re not afraid to try new things -- or even bring back dead trends. </p>
+              <br/>
+              <p className='pb-8'>Combine this with everyday streetwear fashion, another form of unlimited creativity and you&apos;ve got yourself a very wide net. You&apos;ve got unlimited options to choose from; so you can do you and like what you like.</p>
             </div>
         </div>
       </div>
